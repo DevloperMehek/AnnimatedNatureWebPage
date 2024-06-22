@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    /* --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500; */
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #292623;
+}
+#nav{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 7%;
+    font-size: 25px;
+    left: 50%;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    transform: translate(-50%,0%);
+}
+#star1{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 45%;
+    left: -100px;
+}
+#text{
+    color: transparent;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    line-height: 1.5;
+    letter-spacing: 20px;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%,-50%);
+}
+h1{
+    -webkit-text-stroke: 2px  white;
+    cursor: pointer;
+}
+#text :nth-child(2){
+    margin-left: 50px;
+}
+
+#text :nth-child(3){
+    margin-left: 100px;
+}
+
+#imgBox{
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    /* background-color: rebeccapurple; */
+}
+
+#imgBox img{
+    width: 0px;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+
+}
+#imgBox #center{
+    z-index: 88;
+}
+#imgBox #left{
+    width: 0;
+    height: 200px;
+}
+#imgBox #right{
+    width: 0;
+    height: 200px;
+}
